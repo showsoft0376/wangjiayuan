@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>产品详细</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/new.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-scalable mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="title">商品分类</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+							<li class="mui-table-view-cell mui-collapse mui-active">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">富贵卡系列</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right"> 如意卡系列 </a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">金诚卡系列</a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+					<a class="mui-icon mui-icon-bars mui-pull-right" id="rightbars"></a>
+					<div id="search">
+						<div class="mui-input-row" id="searchframe">
+							<input type="text" id="searchtext" placeholder="请输入搜索的关键字">
+						</div>
+						<button type="button" id="searchSubmit" class="mui-btn mui-btn-primary mui-icon mui-icon-search"></button>
+					</div>
+				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a id="index" class="mui-tab-item" href="index.html"> <span class="mui-icon mui-icon-home"></span> <span class="mui-tab-label">首页</span> </a>
+					<a id="offCanvasShowmenu" class="mui-tab-item" href="#tabbar-with-chat"> <span class="mui-icon iconfont icon-fenlei"></span> <span class="mui-tab-label">分类</span> </a>
+					<a id="Member" class="mui-tab-item" href="MemberCenter.html"> <span class="mui-icon iconfont icon-huiyuan1"></span> <span class="mui-tab-label">会员</span> </a>
+					<a id="catalog" class="mui-tab-item" href="ShoppingCart.html"> <span class="mui-icon iconfont icon-gouwuche"><span class="mui-badge">0</span></span> <span class="mui-tab-label">购物车</span> </a>
+				</nav>
+				<div class="mui-content">
+					<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper" style="margin-bottom: 45px;margin-top: 45px;">
+						<div class="mui-scroll">
+
+							<div><img src="images/product/1.jpg" width="100%" /></div>
+							<div class="mui-content-padded">
+								<div style="display:inline;" class="icon_lists">
+									<div class="title" style="margin: 0px;float:left; ">至尊会员卡</div>
+									<div style="float:right;margin-right: 10px;"> <span class="icon iconfontyellow icon-fenxiang"></span> <span class="mui-tab-label">分享</span></div>
+									<div style="float:right;margin-right: 10px;"><span class="icon iconfontyellow icon-shoucang1"></span> <span class="mui-tab-label">收藏</span></div>
+								</div>
+								<div class="clear"></div>
+								<hr style="height:1px;border:none;border-top:1px dashed #C8C7CC;" />
+								<div style="display:inline">
+									<div style="float:left">市场价：</div>
+									<div style="float:left;margin-right: 100px;" class="gray"><s>￥1000</s></div>
+									<div style="float:left">本店价：</div>
+									<div style="float:left" class="gules">￥380</div>
+								</div>
+								<div class="clear"></div>
+								<hr style="height:1px;border:none;border-top:1px dashed #C8C7CC;" />
+								<div tyle="display:inline">
+									<div style="float:left">运费：</div>
+									<div style="float:left;margin-right: 100px;" class="gules">包邮</div>
+									<div style="float:left;">已售：</div>
+									<div style="float:left" class="gules">34瓶</div>
+								</div>
+								<div class="clear"></div>
+								<hr style="height:1px;border:none;border-top:1px dashed #C8C7CC;" />
+								<div class="purchaseline">
+									购买数量:
+									<div class="mui-numbox">
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" value="1" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+									<div class="mui-btn mui-btn-primary purchase" id="addShopping">加入购物车</div>
+									<div class="mui-btn mui-btn-primary purchase" id="immediatelyShopping">立即购买</div>
+								</div>
+
+								<hr style="height:1px;border:none;border-top:1px dashed #C8C7CC;" />
+							</div>
+
+							<div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-negative">
+								<a class="mui-control-item mui-active" href="#item1mobile">
+									商品介绍
+								</a>
+								<a class="mui-control-item" href="#item2mobile">
+									商品评价
+								</a>
+							</div>
+
+							<div class="mui-content-padded-2" style="background: #FFFFFF; padding: 10px;">
+								<div id="item1mobile" class="mui-control-content mui-active">
+
+									<div style="color: #CF2D28; font-size: 18px;"> 致境旗舰店祝亲新春快乐,猴年吉祥如意！<br /> 致境承诺：
+										<br /> 1、会员卡质量问题免费重做
+										<br /> 2、免费设计不满意修改至满意为止
+										<br /> 3、致境会员软件终身免费维护
+										<br /> 4、致境所有提供软件均为正版系统
+										<br /> 关于货期：
+
+										<br /> 普通卡全新料货期5-6天 加急单2天发<br /> 全新料磨砂卡哑面卡7天发货 加急单3天发<br /> 购买套餐 赠送100条软件短信<br /></div>
+									<img src="images/description/1.jpg" alt="描述" />
+									<img src="images/description/2.jpg" alt="描述" /><img src="images/description/3.jpg" alt="描述" /><img src="images/description/4.jpg" alt="描述" /><img src="images/description/5.jpg" alt="描述" /><img src="images/description/6.jpg" alt="描述" />
+
+								</div>
+								<div id="item2mobile" class="mui-control-content">
+									<div class="customcontent">
+										<div class="mui-loading">
+											<div class="mui-spinner">
+
+											</div>
+										</div>
+									</div>
+
+									<div class="rate-control">
+										<label>
+            <input checked="checked" name="ranks" type="radio" value="3" class="good-rate">
+            <i class="iconrate icon-rank icon-good"></i> <span class="label-hidden">好评</span> </label>
+										<label>
+            <input name="ranks" type="radio" value="2" class="noraml-rate">
+            <i class="iconrate icon-rank icon-normal"></i> <span class="label-hidden">中评</span> </label>
+										<label>
+            <input name="ranks" type="radio" value="1" class="bad-rate">
+            <i class="iconrate icon-rank icon-bad"></i> <span class="label-hidden">差评</span> </label>
+									</div>
+
+									<div class="mui-input-row">
+										<textarea id="textarea" style="margin: 0px; padding: 0px;" rows="5" placeholder="输入评价内容"></textarea>
+									</div>
+									<div class="mui-btn mui-btn-primary" style=" margin-bottom: 10px;">我要评论</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script>
+			mui.init({
+				swipeBack: false //启用右滑关闭功能
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2ulleft = '<ul id="item2" class="mui-table-view">';
+				var html2urlright = '</ul>';
+				var html2 = '<li class = "mui-table-view-cell" >' +
+					'<div class="rated">' +
+					'<div class="ratedcolumn">' +
+					'<div class="content">商品：价格便宜，挺好的。。。商品：价格便宜，挺好的。。。商品：价格便宜，挺好的。。。</div>' +
+					'<div class="content">2016-7-9</div>' +
+					'</div>' +
+					'<div class="ratescore">' +
+					'<div class="scorecontent">王家元</div>' +
+					'<div class="scorecontent"><img src="images/xing3.png" style="width: 37px; height: 9px;" /></div>' +
+					'</div>' +
+					'</div>' +
+					'</li>';
+				html2 += html2;
+				html2 += html2;
+				html2 = html2ulleft + html2 + html2urlright;
+				var item2 = document.getElementById('item2mobile');
+				mui('#segmentedControl').on('tap', 'a', function() {
+					var id = this.getAttribute('href');
+					var href = this.href;
+					if(id = "#item2mobile") {
+						if(item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.customcontent').innerHTML = html2;
+							}, 500);
+						}
+
+					}
+					if(id && ~id.indexOf('.html')) {
+						if(!mui.os.plus || (!~id.indexOf('popovers.html') && mui.os.ios)) {
+							mui.openWindow({
+								id: id,
+								url: this.href,
+								styles: {
+									popGesture: 'close'
+								},
+								show: {
+									aniShow: aniShow
+								},
+								waiting: {
+									autoShow: false
+								}
+							});
+						}
+					}
+				});
+			})(mui);
+			mui('.rate-control').on('tap', 'label', function() {
+				var lis = this.childNodes;
+				if(lis.item(1).type == "radio") {
+
+					lis.item(1).checked = true;
+					lis.item(1).focus();
+					return false;
+				}
+			});
+			document.getElementById("addShopping").addEventListener('tap', function() {
+				var number = document.querySelector('.mui-badge').innerText;
+				document.querySelector('.mui-badge').innerText = parseInt(number) + 1;
+			});
+		</script>
+	</body>
+
+</html>

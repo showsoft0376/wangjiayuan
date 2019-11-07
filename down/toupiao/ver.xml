@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="gb18030"?>
+<list>
+	<version>
+		<Versionnumber>1.0.0.1</Versionnumber>
+	</version>
+	<Sponsor>
+		<Sponsor1>
+			<title>广告位招租</title>
+			<link>http://wpa.qq.com/msgrd?v=3&uin=164736343&site=qq&menu=yes</link>
+			<left>223</left>
+			<top>208</top>
+			<width>300</width>
+			<height>27</height>
+		</Sponsor1>
+		<Sponsor2>
+			<title>宽带拨号服务器出售-适合投票-网赚项目-价格便宜</title>
+			<link>http://shop71305662.taobao.com</link>
+			<left>223</left>
+			<top>176</top>
+			<width>300</width>
+			<height>27</height>
+			<qixian>2016-5-3</qixian>
+		</Sponsor2>
+		<Sponsor2>
+			<title>以下是本免费软件赞助商</title>
+			<link>http://wpa.qq.com/msgrd?v=3&uin=164736343&site=qq&menu=yes</link>
+			<left>223</left>
+			<top>144</top>
+			<width>300</width>
+			<height>27</height>
+			<qixian>2016-5-3</qixian>
+		</Sponsor2>
+	</Sponsor>
+</list>

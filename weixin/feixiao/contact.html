@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>联系我们</title>
+    <script src="js/mui.min.js"></script>
+    <script src="js/common.js"></script>
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=s5KqHSmxEoUt6ZIYWnODQwPdoW4zar6O"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/iconfont.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>
+    p{margin: 0;padding: 0;}
+ </style>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon icon-m-members"></span>
+				<span class="mui-tab-label">会员中心</span>
+			</a>
+			<a class="mui-tab-item" href="about.html">
+				<span class="mui-icon icon-guanyuwomen"></span>
+				<span class="mui-tab-label">关于我们</span>
+			</a>
+			<a class="mui-tab-item" href="service.html">
+				<span class="mui-icon icon-fuwufanwei"></span>
+				<span class="mui-tab-label">服务范围</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="contact.html">
+				<span class="mui-icon icon-lianxiwomen"></span>
+				<span class="mui-tab-label">联系我们</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			
+    <div style="width:100%;height:350px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+    <div class="mui-card" style="margin: 5px;">
+    	<div class="mui-content-padded">
+    		<h4>业务联系</h4>
+    		<p>联系人：xxxxx</p>
+    		<p>联系QQ：123465</p>
+    		<p>联系电话：137999999999</p>
+    		<h4>客服人员</h4>
+    		<p>德胜客服① QQ132456798</p>
+    		<p>德胜客服② QQ132456</p>
+</div>
+</div>
+		</div>
+	
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(116.186304,33.163887),19);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"",title:"我们在这里",imageOffset: {width:0,height:3},position:{lat:33.163679,lng:116.185841}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+      var plOpts = [
+        {strokeColor:"#f00",strokeWeight:"2",strokeOpacity:"0.6"}
+      ];
+      var plPath = [
+        [
+          new BMap.Point(116.185581,33.163687),
+          new BMap.Point(116.185594,33.163471),
+          new BMap.Point(116.186488,33.163509),
+          new BMap.Point(116.186452,33.163728),
+          new BMap.Point(116.185594,33.16369),
+          new BMap.Point(116.18559,33.16369),
+          new BMap.Point(116.18559,33.16369),
+          new BMap.Point(116.18559,33.16369)
+        ],
+      ];
+      for(var index = 0; index < plOpts.length; index++){
+        var polyline = new BMap.Polyline(plPath[index],plOpts[index]);
+        map.addOverlay(polyline);
+      }
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:1});
+      map.addControl(navControl);
+    }
+    var map;
+      initMap();
+  </script>
+</html>

@@ -1,0 +1,139 @@
+@charset "gb2312";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin: 0; padding: 0; }
+body { font-size: 62.5%; color: #666; background: #FFF; line-height: 24px; }
+html>body { font-size: 12px; }
+fieldset, img { border: 0; }
+ol, ul { list-style: none; }
+ul, li { list-style: none; list-style-type: none; list-style-position: outside; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em { font-style: normal; }
+input, button, select, textarea { outline: none; }
+textarea { resize: none; }
+html, body { background-color: #FFF; height: 100%; }
+body, td, th { font-size: 9pt; color: #000000; }
+a:link, a:visited { color: #1A6495; text-decoration: none; }
+a:hover, a:active { color: #0000FF; text-decoration: none; }
+a:focus { outline: none; }
+#container { width: 100%; margin: 0 auto; height: 100%; overflow: hidden; }
+.blank { font-size: 5px; height: 10px; }
+.clearfloat { clear: both; height: 0; font-size: 1px; line-height: 0px; }
+#lib_Tab1_sx { width: 100%; margin: 0px; padding: 0px; margin-bottom: 0px; overflow: hidden; height: 100%; }
+.lib_tabborder_sx { }
+.lib_Menubox_sx { line-height: 28px; position: relative; float: left; background-color: #252733; width: 250px; height: 100%; }
+.lib_Menubox_sx ul { margin: 0px; padding: 0px; list-style: none; position: absolute; top: 0px; left: 0px; height: 30px; text-align: center; }
+.lib_Menubox_sx li { display: block; cursor: pointer; width: 250px; color: #C3C3C3; font-weight: bold; margin-bottom: 5px; height: 60px; line-height: 60px; background-color: #252733; }
+.lib_Menubox_sx li.visited { padding: 0px; background: #1E1F29; width: 250px; border-right: 0; color: #D5D5D5; height: 60px; line-height: 60px; }
+.lib_Menubox_sx li.hover { padding: 0px; background: #fff; width: 250px; border-right: 0; color: #F6F6F6; height: 60px; line-height: 60px; background: url(../images/nav_leng.png) 0 -64px; }
+.lib_Contentbox_sx { margin-top: 0px; border-top: none; padding: 0 0px; border-left: 0; margin-left: 130px; overflow: hidden; height: 100% }
+.lib_Menubox_sx #home { background: url(../images/home.png) no-repeat; background-position: left; margin-left: 50px; padding-left: 38px; text-align: left; }
+.lib_Menubox_sx #logo { height: 100px; margin: 0px; padding: 0px; }
+.lib_Menubox_sx #logo #left { width: 80px; margin-top: 20px; float: left; text-align: right; }
+.lib_Menubox_sx #logo #right { width: 170px; margin-top: 20px; float: left; font-family: "微软雅黑", sans-serif; font-size: 22px; font-weight: bold; text-align: left; color: #FFF; }
+.lib_Menubox_sx .logodef { background: #393E5A; }
+.lib_Menubox_sx .logohover { background: #30344D; }
+.lib_Menubox_sx p { color: #F5F5F5; line-height: 21px; font-size: 14px; text-align: left; margin-left: 10px; }
+.lib_Menubox_sx p img { vertical-align: middle; margin-right: 10px; margin-bottom: 5px; text-align: left; }
+.lib_Menubox_sx p a { color:#F5F5F5; }
+.lib_Menubox_sx p a:hover { color:#F60; }
+/*showimages*/
+#containerRight { width: 100%; margin: 0 auto; height: 100%; overflow: hidden; background-color: #FFF; position: relative;   /*重要！保证footer是相对于wapper位置绝对*/ height: auto;          /* 保证页面能撑开浏览器高度时显示正常*/ min-height: 100%  /* IE6不支持，IE6要单独配置*/ }
+<!--
+[if it IE 7]-> <style> #containerRight {
+height:100%;
+} /* IE在高度不够时会自动撑开层*/
+</style> <![endif]
+-->
+ul, li {
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+img { border: 0; }
+.focus { width: 1000px; margin: 0 auto; height: 340px; overflow: hidden; position: relative; margin-top: 20px; }
+.focus ul { height: 380px; position: absolute; }
+.focus ul li { float: left; width: 1000px; height: 340px; overflow: hidden; position: relative; background: #000; }
+.focus ul li img { width: 1000px; height: 340px; }
+.focus ul li div { position: absolute; overflow: hidden; }
+.focus .btnBg { position: absolute; width: 1000px; height: 20px; left: 0; bottom: 0; background: #000; display: none; }
+.focus .btn { position: absolute; width: 980px; height: 23px; padding: 0px 10px 0px 10px; right: 0; bottom: 6px; text-align: right; }
+.focus .btn span { display: inline-block; _display: inline; _zoom: 1; width: 25px; height: 24px; line-height: 24px; text-align: center; _font-size: 0; margin-left: 5px; cursor: pointer; background: #fff; }
+.focus .btn span.on { background: #fff; }
+.focus .preNext { width: 45px; height: 100px; position: absolute; top: 90px; background: url(../images/slideware/sprite.png) no-repeat 0 0; cursor: pointer; }
+.focus .pre { left: 0; }
+.focus .next { right: 0; background-position: right top; }
+.list { font-family: "微软雅黑", sans-serif; font-size: 12px; font-weight: normal; }
+.list h1 { text-align: center; font-size: 22px; }
+.list h4 { text-indent: 2em; }
+#main { padding-bottom: 140px; width: 1000px; margin: 0 auto; }
+.f_item { background: url(../Images/f_bg_item.jpg) no-repeat; margin: 30px auto 50px auto; width: 1003px; height: 289px; }
+.f_item ul { padding: 198px 0 0 33px }
+.f_item li { float: left; width: 180px; margin-right: 71px }
+.f_item li.last { margin-right: 0 }
+.f_item li h3 { text-align: center; color: #00a971; font-size: 24px; display: inline-block; width: 169px }
+.f_item li p { color: #00a971; font-size: 14px; margin-top: 10px }
+.f_item_img { background: #e5e5e5; height: 114px; min-width: 1003px; width: 100%!important }
+.f_item_img ul { padding-top: 22px }
+.f_item_img ul li { float: left; width: 190px; height: 73px; margin: 0 5px; _margin: 0 3px }
+.f_item_img ul li img { width: 190px; height: 73px }
+/*product*/
+.warBody { margin: 0 auto; width: 1000px; margin-top: 20px; padding-bottom: 140px; }
+.warBody ul li { float: left; width: 476px; margin-right: 46px; margin-bottom: 70px; }
+.warBody ul li.nM { margin-right: 0 }
+.warBody ul li .icon { background: url(../Images/f_h2_icon.jpg) no-repeat; width: 143px; height: 120px; float: left; margin-top: 15px; }
+.warBody ul li .icon2 { background-position: 0 -120px; }
+.warBody ul li .icon3 { background-position: 0 -240px; margin-top: 0; }
+.warBody ul li .icon4 { background-position: 0 -360px; margin-top: 0; }
+.warBody ul li .icon5 { background-position: 0 -480px; }
+.warBody ul li .icon6 { background-position: 0 -600px; margin-top: 0; }
+.warBody ul li .icon7 { background-position: 0 -720px; margin-top: 5px; }
+.warBody ul li .icon8 { background-position: 0 -840px; margin-top: 0; }
+.warBody ul li .icon9 { background-position: 0 -960px; margin-top: 0; }
+.warBody ul li .icon10 { background-position: 0 -1080px; }
+.warBody ul li .icon11 { background-position: 0 -1200px; margin-top: 5px; }
+.warBody ul li .icon12 { background-position: 0 -1320px; }
+.warBody ul li .icon13 { background-position: 0 -1440px; }
+.warBody ul li .icon14 { background-position: 0 -1560px; margin-top: 0; }
+.warBody ul li .icon15 { background-position: 0 -1680px; margin-top: 0; }
+.warBody ul li .iconContent { float: left; width: 333px; }
+.warBody ul li h2 { font-size: 26px; color: #555; font-weight: lighter; margin-bottom: 10px; }
+.warBody ul li p { font-size: 14px; color: #555; line-height: 25px; }
+/*other*/
+.showimages { width: 1000px; margin: 0 auto; overflow: hidden; padding-bottom: 160px; }
+.showimages #head { height: 100px; text-align: center; font-family: "微软雅黑", sans-serif; font-size: 22px; font-weight: bold; line-height: 100px; }
+.showimages .tdcenter { background: url(../images/center.jpg) repeat-y; width: 310px; font-family: "微软雅黑", sans-serif; font-size: 12px; font-weight: normal; padding: 0px 5px; line-height: 1.5; }
+.showimages .tdcenter h1 { text-align: center; font-size: 22px; }
+.showimages .tdcenter h4 { text-indent: 2em; font-size: 12px; font-weight: normal; width: 310px; color: #7D7D7D }
+.showimages .bottom { background: url(../images/bottom.jpg) no-repeat; width: 310px; height: 10px; }
+.showimages .Division { height: 10px; }
+.showimages td { filter: Alpha(opacity = 100); vertical-align: top }
+.showimages td img { cursor: pointer; width: 310px; height: 193px; }
+#imgbox-loading { position: absolute; top: 0; left: 0; background: url('../images/imgbox/imgbox-spinner.gif') center center no-repeat; cursor: pointer; display: none; z-index: 90; }
+#imgbox-loading div { background: #FFF; width: 100%; height : 100%; }
+#imgbox-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; display: none; z-index: 80; }
+.imgbox-wrap { position: absolute; top: 0; left: 0; background: #FFF; display: none; z-index: 90; }
+.imgbox-img { padding: 0; margin: 0; border: none; width: 100%; height: 100%; vertical-align: top; }
+.imgbox-close { position: absolute; top: -15px; right: -15px; height: 30px; width: 30px; background: url('../images/imgbox/imgbox-close.png') top left no-repeat; cursor: pointer; outline: none; }
+.imgbox-title { padding-top: 10px; font-size: 12px; text-align: center; font-family: Arial; color: #333; display: none; }
+.imgbox-bg-wrap { position: absolute; padding: 0; margin: 0; display: none; }
+.imgbox-bg { position: absolute; width: 20px; height: 20px; }
+.imgbox-bg-n { left: 0; top: -20px; width: 100%; background: url(../images/imgbox/imgbox-bg-n.png) repeat-x; }
+.imgbox-bg-ne { right: -20px; top: -20px; background: url(../images/imgbox/imgbox-bg-ne.png) no-repeat; }
+.imgbox-bg-e { right: -20px; top: 0; height: 100%; background: url(../images/imgbox/imgbox-bg-e.png) repeat-y; }
+.imgbox-bg-se { right: -20px; bottom: -20px; background: url(../images/imgbox/imgbox-bg-se.png) no-repeat; }
+.imgbox-bg-s { left: 0; bottom: -20px; width: 100%; background: url(../images/imgbox/imgbox-bg-s.png) repeat-x; }
+.imgbox-bg-sw { left: -20px; bottom: -20px; background: url(../images/imgbox/imgbox-bg-sw.png) no-repeat; }
+.imgbox-bg-w { left: -20px; top: 0; height: 100%; background: url(../images/imgbox/imgbox-bg-w.png) repeat-y; }
+.imgbox-bg-nw { left: -20px; top: -20px; background: url(../images/imgbox/imgbox-bg-nw.png) no-repeat; }
+/*tutorial*/
+.tutorial { width: 1000px; margin: 0 auto; font-family: "微软雅黑", sans-serif; font-size: 12px; font-weight: normal; padding: 0px 5px; line-height: 1.5; margin-top: 20px; padding-bottom: 140px; }
+.tutorial h2 { font-size: 18px; color: #353644 }
+.tutorial p { padding: 10px 0 0 35px; color: #4c4c4c; line-height: 25px; font-size: 14px; }
+/*footer*/
+.footer { width: 100%; margin: 0 auto; height: 140px; line-height: 24px; text-align: center; color: #333; position: absolute; bottom: 0; /* 关键 */ left: 0; background-color: #EFEFEF; }
+.footer .warp { padding: 20px 0px; }
+.footer .warp img { margin-right: 10px; }
+.footer a:link, .footer a:visited { color: #333; text-decoration: underline; }
+.footer a:hover, .footer a:active { color: #333; text-decoration: underline; }
+.footer .cnzz a:link, .footer .cnzz a:visited { color: #FFFFFF; text-decoration: none; }
+.footer .cnzz a:hover, .footer .cnzz a:active { color: #FFFFFF; text-decoration: underline; }

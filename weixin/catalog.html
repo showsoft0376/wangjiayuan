@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>全部产品</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/new.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js"></script>
+		</style>
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-scalable mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="title">商品分类</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+							<li class="mui-table-view-cell mui-collapse mui-active">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">富贵卡系列</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right"> 如意卡系列 </a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">金诚卡系列</a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+					<a class="mui-icon mui-icon-bars mui-pull-right"  id="rightbars"></a>
+					<div id="search">
+						<div class="mui-input-row" id="searchframe">
+							<input type="text" id="searchtext" placeholder="请输入搜索的关键字">
+						</div>
+						<button type="button" id="searchSubmit" class="mui-btn mui-btn-primary mui-icon mui-icon-search"></button>
+					</div>
+				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a id="index" class="mui-tab-item" href="index.html"> <span class="mui-icon mui-icon-home"></span> <span class="mui-tab-label">首页</span> </a>
+					<a id="offCanvasShowmenu" class="mui-tab-item" href="#tabbar-with-chat"> <span class="mui-icon iconfont icon-fenlei"></span> <span class="mui-tab-label">分类</span> </a>
+					<a id="Member" class="mui-tab-item" href="MemberCenter.html"> <span class="mui-icon iconfont icon-huiyuan1"></span> <span class="mui-tab-label">会员</span> </a>
+					<a id="catalog" class="mui-tab-item" href="ShoppingCart.html"> <span class="mui-icon iconfont icon-gouwuche"><span class="mui-badge">9</span></span> <span class="mui-tab-label">购物车</span> </a>
+				</nav>
+				<div class="mui-content">
+
+					<!--下拉刷新容器-->
+					<div id="pullrefresh" class="mui-content mui-scroll-wrapper" style="margin-bottom: 45px; margin-top: 45px;">
+						<div class="mui-scroll">
+							<!--数据列表-->
+							<ul class="mui-table-view mui-grid-view" id="show">
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script>
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+				},
+				swipeBack: false //启用右滑关闭功能
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('#show.mui-table-view');
+					var cells = document.body.querySelectorAll('#show>.mui-table-view-cell');
+					for(var i = cells.length, len = i + 3; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell mui-media mui-col-xs-6';
+						//li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+						var nimg = i % 4 == 0 ? 4 : i % 4;
+						li.innerHTML = '<a href="IntroduceProducts.html">' +
+							'<div class="sc_img">' +
+							'<img class="mui-media-object" src="images/product/' + nimg + '.jpg" alt="至尊会员卡">' +
+							'<div>' +
+							'<p>' +
+							'<span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售：' +
+							'<span>80</span>张</p>' +
+							'</div>' +
+							'</div>' +
+							'<div class="mui-media-body" style="height: auto;">至尊会员卡<span class="mui-badge mui-badge-danger">4折</span></div>' +
+							'</a>' +
+							'<div class="sc_money">' +
+							'<div class="m_nb">' +
+							'<h2>打折价:￥100</h2>' +
+							'<h4><s>原价:￥698</s></h4>' +
+							'</div>' +
+							'<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>' +
+							'</div>';
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+					}
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('#show.mui-table-view');
+					var cells = document.body.querySelectorAll('#show>.mui-table-view-cell');
+					for(var i = cells.length, len = i + 20; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell mui-media mui-col-xs-6';
+						//li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+						var nimg = i % 4 == 0 ? 4 : i % 4;
+						li.innerHTML = '<a href="IntroduceProducts.html">' +
+							'<div class="sc_img">' +
+							'<img class="mui-media-object" src="images/product/' + nimg + '.jpg" alt="至尊会员卡">' +
+							'<div>' +
+							'<p>' +
+							'<span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售：' +
+							'<span>80</span>张</p>' +
+							'</div>' +
+							'</div>' +
+							'<div class="mui-media-body" style="height: auto;">至尊会员卡<span class="mui-badge mui-badge-danger">4折</span></div>' +
+							'</a>' +
+							'<div class="sc_money">' +
+							'<div class="m_nb">' +
+							'<h2>打折价:￥100</h2>' +
+							'<h4><s>原价:￥698</s></h4>' +
+							'</div>' +
+							'<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>' +
+							'</div>';
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+			if(mui.os.plus) {
+				mui.plusReady(function() {
+					setTimeout(function() {
+						mui('#pullrefresh').pullRefresh().pullupLoading();
+					}, 1000);
+
+				});
+			} else {
+				mui.ready(function() {
+					mui('#pullrefresh').pullRefresh().pullupLoading();
+				});
+			}
+		</script>
+	</body>
+
+</html>

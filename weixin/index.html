@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>德胜网络科技分销系统</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/new.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-scalable mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="title">商品分类</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+							<li class="mui-table-view-cell mui-collapse mui-active">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">富贵卡系列</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right"> 如意卡系列 </a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">金诚卡系列</a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<nav class="mui-bar mui-bar-tab">
+					<a id="index" class="mui-tab-item mui-active" href="index.html"> <span class="mui-icon mui-icon-home"></span> <span class="mui-tab-label">首页</span> </a>
+					<a id="offCanvasShowmenu" class="mui-tab-item" href="#tabbar-with-chat"> <span class="mui-icon iconfont icon-fenlei"></span> <span class="mui-tab-label">分类</span> </a>
+					<a id="Member" class="mui-tab-item" href="MemberCenter.html"> <span class="mui-icon iconfont icon-huiyuan1"></span> <span class="mui-tab-label">会员</span> </a>
+					<a id="catalog" class="mui-tab-item" href="ShoppingCart.html"> <span class="mui-icon iconfont icon-gouwuche"><span class="mui-badge">9</span></span> <span class="mui-tab-label">购物车</span> </a>
+				</nav>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="mui-content">
+							<div id="slider" class="mui-slider">
+								<div class="mui-slider-group mui-slider-loop">
+									<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="IntroduceProducts.html"> <img src="images/product/1.jpg"> </a>
+									</div>
+									<!-- 第一张 -->
+									<div class="mui-slider-item">
+										<a href="IntroduceProducts.html"> <img src="images/product/2.jpg"> </a>
+									</div>
+									<!-- 第二张 -->
+									<div class="mui-slider-item">
+										<a href="IntroduceProducts.html"> <img src="images/product/3.jpg"> </a>
+									</div>
+									<!-- 第三张 -->
+									<div class="mui-slider-item">
+										<a href="IntroduceProducts.html"> <img src="images/product/4.jpg"> </a>
+									</div>
+									<!-- 第四张 -->
+									<div class="mui-slider-item">
+										<a href="IntroduceProducts.html"> <img src="images/product/1.jpg"> </a>
+									</div>
+									<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="IntroduceProducts.html"> <img src="images/product/1.jpg"> </a>
+									</div>
+								</div>
+								<div class="mui-slider-indicator">
+									<div class="mui-indicator mui-active"></div>
+									<div class="mui-indicator"></div>
+									<div class="mui-indicator"></div>
+									<div class="mui-indicator"></div>
+								</div>
+							</div>
+							<div class="menunav" style="width: 100%;">
+								<ul style="width: 100%;margin: 0px;padding: 0px;">
+									<li style="width:20%;">
+										<a href="catalog.html"><i></i>
+											<div style="width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">产品</div>
+										</a>
+									</li>
+									<li id="offCanvasShow" style="width:20%;">
+										<a href="#"><i></i>
+											<div style="width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">分类</div>
+										</a>
+									</li>
+									<li style="width:20%;">
+										<a href="catalog.html"><i></i>
+											<div style="width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">关注</div>
+										</a>
+									</li>
+									<li style="width:20%;">
+										<a href="catalog.html"><i></i>
+											<div style="width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">赚钱</div>
+										</a>
+									</li>
+									<li style="width:20%;">
+										<a href="catalog.html"><i></i>
+											<div style="width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">分享</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+							<div class="blue">
+								<div id="slatenav">
+									<ul>
+										<li><span>金卡系列</span></li>
+										<li style=" float: right;">
+											<a href="#" title="css menus">更多</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="mui-table-view mui-grid-view" id="show">
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/1.jpg" alt="至尊会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">至尊会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/2.jpg" alt="黄金会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">黄金会员卡<span class="mui-badge mui-badge-danger">3折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/3.jpg" alt="粉红会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">粉红会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/4.jpg" alt="金典会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">金典会员卡<span class="mui-badge mui-badge-danger">1折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/2.jpg" alt="黄金会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">黄金会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/3.jpg" alt="金典会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">金典会员卡<span class="mui-badge mui-badge-danger">3折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+							</ul>
+							<hr style="height:1px;border:none;border-top:1px dashed #0066CC;" />
+							<div class="blue">
+								<div id="slatenav">
+									<ul>
+										<li><span>至尊系列</span></li>
+										<li style=" float: right;">
+											<a href="#" title="css menus">更多</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="mui-table-view mui-grid-view">
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/4.jpg" alt="至尊会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">至尊会员卡<span class="mui-badge mui-badge-danger">4折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/3.jpg" alt="黄金会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">黄金会员卡<span class="mui-badge mui-badge-danger">3折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/2.jpg" alt="粉红会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">粉红会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/1.jpg" alt="金典会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">金典会员卡<span class="mui-badge mui-badge-danger">1折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/3.jpg" alt="黄金会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">黄金会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-6">
+									<a href="IntroduceProducts.html">
+										<div class="sc_img"> <img class="mui-media-object" src="images/product/2.jpg" alt="金典会员卡">
+											<div>
+												<p> <span>运费: </span> 包邮&nbsp;&nbsp;&nbsp;&nbsp; 已售： <span>80</span>张</p>
+											</div>
+										</div>
+										<div class="mui-media-body" style="height: auto;">金典会员卡<span class="mui-badge mui-badge-danger">3折</span></div>
+									</a>
+									<div class="sc_money">
+										<div class="m_nb">
+											<h2>打折价:￥100</h2>
+											<h4><s>原价:￥698</s></h4>
+										</div>
+										<a name="myselect" href="#" id="myselect"><img src="images/shopping_car_03.png"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="mui-off-canvas-backdrop"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: false //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		</script>
+	</body>
+
+</html>

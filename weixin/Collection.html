@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>我的收藏</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/new.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-scalable mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="title">商品分类</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+							<li class="mui-table-view-cell mui-collapse mui-active">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">富贵卡系列</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right"> 如意卡系列 </a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">至尊系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">金诚卡系列</a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">金卡系列</a>
+								<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">至尊会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">黄金会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">粉红会员卡</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#">金典会员卡</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+					<h1 class="mui-title">我的收藏</h1>
+					<a class="mui-icon mui-icon-bars mui-pull-right" id="rightbars"></a>
+				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a id="index" class="mui-tab-item" href="index.html"> <span class="mui-icon mui-icon-home"></span> <span class="mui-tab-label">首页</span> </a>
+					<a id="offCanvasShowmenu" class="mui-tab-item" href="#tabbar-with-chat"> <span class="mui-icon iconfont icon-fenlei"></span> <span class="mui-tab-label">分类</span> </a>
+					<a id="Member" class="mui-tab-item" href="MemberCenter.html"> <span class="mui-icon iconfont icon-huiyuan1"></span> <span class="mui-tab-label">会员</span> </a>
+					<a id="catalog" class="mui-tab-item" href="ShoppingCart.html"> <span class="mui-icon iconfont icon-gouwuche"><span class="mui-badge">9</span></span> <span class="mui-tab-label">购物车</span> </a>
+				</nav>
+				<div class="mui-content">
+					<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper" style="margin-bottom: 45px;margin-top: 45px;">
+						<div class="mui-scroll">
+
+							<div class="mui-card" style="margin: 1px 5px 35px 5px;">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/2.jpg">
+											<div class="mui-media-body">
+												<div>至尊会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/3.jpg">
+											<div class="mui-media-body">
+												<div>黄金会员卡<span class="mui-badge mui-badge-danger">6折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/4.jpg">
+											<div class="mui-media-body">
+												<div>粉红会员卡<span class="mui-badge mui-badge-danger">5折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/1.jpg">
+											<div class="mui-media-body">
+												<div>金典会员卡<span class="mui-badge mui-badge-danger">8折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/2.jpg">
+											<div class="mui-media-body">
+												<div>至尊会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/3.jpg">
+											<div class="mui-media-body">
+												<div>黄金会员卡<span class="mui-badge mui-badge-danger">6折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/4.jpg">
+											<div class="mui-media-body">
+												<div>粉红会员卡<span class="mui-badge mui-badge-danger">5折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/1.jpg">
+											<div class="mui-media-body">
+												<div>金典会员卡<span class="mui-badge mui-badge-danger">8折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/2.jpg">
+											<div class="mui-media-body">
+												<div>至尊会员卡<span class="mui-badge mui-badge-danger">2折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/3.jpg">
+											<div class="mui-media-body">
+												<div>黄金会员卡<span class="mui-badge mui-badge-danger">6折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/4.jpg">
+											<div class="mui-media-body">
+												<div>粉红会员卡<span class="mui-badge mui-badge-danger">5折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<img class="mui-pull-left imgsize" src="images/product/1.jpg">
+											<div class="mui-media-body">
+												<div>金典会员卡<span class="mui-badge mui-badge-danger">8折</span></div>
+												<div class='mui-ellipsis collectionlist'>
+													<h2>打折价:￥100</h2>
+													<h4><s>原价:￥698</s></h4>
+												</div>
+												<div class="clear"></div>
+												<div id="buttomlien">
+													<button type="button" class="mui-btn">
+							购买
+						</button><button type="button" class="mui-btn">
+							删除
+						</button></div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>
